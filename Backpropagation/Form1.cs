@@ -12,13 +12,13 @@ namespace Backpropagation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            nn = new NeuralNet(4, 100, 1);
+            nn = new NeuralNet(4, 450, 1);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 256; i++)
             {
                 nn.setInputs(0, 0.0);
                 nn.setInputs(1, 0.0);
@@ -142,6 +142,26 @@ namespace Backpropagation
             nn.setInputs(3, Convert.ToDouble(textBox4.Text));
             nn.run();
             textBox5.Text = "" + nn.getOuputData(0);
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+        }
+
+        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            nn.saveWeights(saveFileDialog1.FileName);
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            nn.loadWeights(openFileDialog1.FileName);
         }
     }
 }

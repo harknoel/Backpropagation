@@ -1,0 +1,5 @@
+C:\Users\bonti\source\repos\Backpropagation\Backpropagation\bin\Release\net8.0-windows\publish\Backpropagation.exe
+C:\Users\bonti\source\repos\Backpropagation\Backpropagation\bin\Release\net8.0-windows\publish\Backpropagation.dll
+C:\Users\bonti\source\repos\Backpropagation\Backpropagation\bin\Release\net8.0-windows\publish\Backpropagation.deps.json
+C:\Users\bonti\source\repos\Backpropagation\Backpropagation\bin\Release\net8.0-windows\publish\Backpropagation.runtimeconfig.json
+C:\Users\bonti\source\repos\Backpropagation\Backpropagation\bin\Release\net8.0-windows\publish\Backpropagation.pdb
