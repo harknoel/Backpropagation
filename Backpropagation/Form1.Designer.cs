@@ -42,33 +42,35 @@
             fileToolStripMenuItem = new ToolStripMenuItem();
             openToolStripMenuItem = new ToolStripMenuItem();
             saveToolStripMenuItem = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(124, 64);
+            textBox1.Location = new Point(44, 118);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(124, 130);
+            textBox2.Location = new Point(44, 166);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(124, 194);
+            textBox3.Location = new Point(44, 318);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(124, 262);
+            textBox4.Location = new Point(44, 364);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(125, 27);
             textBox4.TabIndex = 3;
@@ -76,14 +78,14 @@
             // textBox5
             // 
             textBox5.Enabled = false;
-            textBox5.Location = new Point(489, 165);
+            textBox5.Location = new Point(771, 225);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(182, 27);
             textBox5.TabIndex = 4;
             // 
             // button1
             // 
-            button1.Location = new Point(124, 334);
+            button1.Location = new Point(175, 469);
             button1.Name = "button1";
             button1.Size = new Size(137, 62);
             button1.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(332, 336);
+            button2.Location = new Point(381, 471);
             button2.Name = "button2";
             button2.Size = new Size(135, 58);
             button2.TabIndex = 6;
@@ -103,7 +105,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(546, 334);
+            button3.Location = new Point(592, 469);
             button3.Name = "button3";
             button3.Size = new Size(125, 58);
             button3.TabIndex = 7;
@@ -126,7 +128,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(1001, 28);
             menuStrip1.TabIndex = 8;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -151,11 +153,22 @@
             saveToolStripMenuItem.Text = "Save";
             saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.and_gate;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(175, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(590, 366);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1001, 555);
+            Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -170,6 +183,7 @@
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -190,5 +204,6 @@
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem openToolStripMenuItem;
         private ToolStripMenuItem saveToolStripMenuItem;
+        private PictureBox pictureBox1;
     }
 }
